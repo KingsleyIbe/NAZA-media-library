@@ -2,13 +2,11 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import { fetchPhotos } from '../redux/media/media';
 
-const Home = ({ items }) => {
-  const [photos, setPhotos] = useState(items);
-  // const [search, setSearch] = useState('');
-
-  const mediaPhoto = useSelector((state) => state.photosReducer.photos);
+const Home = () => {
+  const photos = useSelector((state) => state.photosReducer);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -16,18 +14,16 @@ const Home = ({ items }) => {
   }, []);
 
   return (
-    <div>
+    <>
       <h1>NASA Media Gallery</h1>
-      {mediaPhoto && mediaPhoto.map((preview) => (
+      {photos && photos.map((photo) => (
         <div
-          key={preview.data.id[0].nasa_id}
-          thumbnailUrl={preview.links[0].href}
-          nasa_id={preview.data.id[0].nasa_id}
+          key={uuidv4()}
         >
-          HI
+          <img src={photo.links[0].href} alt={photo.data.title[0].text} />
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
