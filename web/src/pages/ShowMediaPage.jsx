@@ -1,7 +1,10 @@
 import React from 'react';
+import Details from '../component/Details';
 
 const ShowMediaPage = () => (
-  <div>ShowMediaPage</div>
+  <div>
+    <Details />
+  </div>
 );
 
 export default ShowMediaPage;
