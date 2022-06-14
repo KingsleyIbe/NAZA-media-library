@@ -16,17 +16,20 @@ export const photos = (payload) => ({
 export const fetchPhotos = () => async (dispatch) => {
   const res = await axios.get('https://images-api.nasa.gov/search?media_type=image');
   const newPhotos = res.data.collection.items;
-  // console.log(newPhotos);
-  dispatch(photos(newPhotos));
-  // console.log(photos);
+  dispatch({
+    type: FETCH_PHOTOS,
+    payload: newPhotos,
+  });
 };
 
 // Reducer
 const photosReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_PHOTOS:
-      console.log(action.payload);
-      return [state, ...action.payload];
+      return {
+        ...state,
+        photos: action.payload,
+      };
     default:
       return state;
   }

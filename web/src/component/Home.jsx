@@ -7,6 +7,7 @@ import { fetchPhotos } from '../redux/media/media';
 
 const Home = () => {
   const photos = useSelector((state) => state.photosReducer);
+  console.log(photos);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -16,7 +17,7 @@ const Home = () => {
   return (
     <>
       <h1>NASA Media Gallery</h1>
-      {photos && photos.map((photo) => (
+      {photos && photos.photos.map((photo) => (
         <div
           key={uuidv4()}
         >
