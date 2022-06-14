@@ -1,9 +1,9 @@
 import React from 'react';
-import Details from '../component/Details';
+import Home from '../component/ShowMedia';
 
 const ShowMediaPage = () => (
   <div>
-    <Details />
+    <Home />
   </div>
 );
 
