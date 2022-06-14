@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import NASA from '../assets/images/naza.png';
 
 const Header = () => {
   const handleClick = ({ isActive }) => ({
-    borderBottom: isActive ? '4px solid #4853F1' : 'none',
+    borderBottom: isActive ? '2px solid #FFF' : 'none',
   });
   return (
     <header className="text-center p-10">
@@ -14,8 +14,8 @@ const Header = () => {
             <img src={NASA} alt="Nasa Logo" className="w-[50px]" />
           </div>
           <div className="flex gap-x-10 items-center text-[#fc3d21] font-semibold text-[20px] absolute right-[200px]">
-            <li><Link to="/" onClick={{ handleClick }}>Show Media</Link></li>
-            <li><Link to="/search-media">Search Media</Link></li>
+            <li><NavLink to="/" style={handleClick} className="pb-2">Show Media</NavLink></li>
+            <li><NavLink to="/search-media" style={handleClick} className="pb-2">Search Media</NavLink></li>
           </div>
         </ul>
       </nav>

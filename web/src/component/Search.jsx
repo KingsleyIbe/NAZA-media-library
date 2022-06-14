@@ -1,4 +1,5 @@
-import { FaSearch } from 'react-icons/fa';
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import React from 'react';
 
 const Search = () => {
   const searchPhotos = () => {
@@ -19,11 +20,19 @@ const Search = () => {
 
   return (
     <>
-      <div className="photo-name" />
-      <div className="search-input-icon">
-        <FaSearch className="search-icon" />
+      <div className="photo-name relative" />
+      <div className=" flex gap-x-10 items-center text-[18px] search-input-icon w-[100%] absolute left-[140px] mt-[50px]">
+        <h2>Filter:</h2>
+        <div className="flex gap-x-5 items-center">
+          <input type="checkbox" id="startDate" />
+          <label htmlFor="startDate">Start Date</label>
+        </div>
+        <div className="flex gap-x-5 items-center">
+          <input type="checkbox" id="endDate" />
+          <label htmlFor="endDate">End Date</label>
+        </div>
         <input
-          className="search"
+          className="search w-[60%] border-0 rounded-[30px] py-4 px-10 bg-[#062150] text-[#fc3d21]"
           type="text"
           id="input-photo"
           placeholder="Search Photos..."
