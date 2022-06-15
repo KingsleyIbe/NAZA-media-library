@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import { fetchPhotos } from '../redux/media/media';
 
@@ -14,7 +15,11 @@ const ShowMedia = () => {
   }, []);
 
   return (
-    <section className="py-10">
+    <section className="py-10 relative">
+      <button type="button" className="bg-[#062150] px-5 py-2 rounded-[10px] absolute left-[40px] mt-5">
+        <Link to="/search-media">Search for Photo Here</Link>
+        {' '}
+      </button>
       <h1 className="text-center font-extrabold text-[35px]">Welcome to NASA Media Library</h1>
       {photos.photos.length > 0 && photos.photos.map((photo) => (
         <div

@@ -11,9 +11,9 @@ const Header = () => {
       <nav>
         <ul className="flex gap-x-10 items-center relative">
           <div>
-            <img src={NASA} alt="Nasa Logo" className="w-[50px]" />
+            <img src={NASA} alt="Nasa Logo" className="w-[100px]" />
           </div>
-          <div className="flex gap-x-10 items-center text-[#fc3d21] font-semibold text-[20px] absolute right-[200px]">
+          <div className="flex gap-x-10 items-center text-[#fc3d21] font-semibold text-[20px] absolute right-[150px]">
             <li><NavLink to="/" style={handleClick} className="pb-2">Show Media</NavLink></li>
             <li><NavLink to="/search-media" style={handleClick} className="pb-2">Search Media</NavLink></li>
           </div>
