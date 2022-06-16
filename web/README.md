@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# NASA MEDIA LIBRARY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>This web application get NASA media library data of different centers. User can filter search by some parameters such as start and end date and will be able to search individual media items using item properties such as title, photographer, center etc.
 
-## Available Scripts
+![Screenshot](./src/assets/images/screenShotPage1.jpeg)
 
-In the project directory, you can run:
+## BUILT WITH
 
-### `npm start`
+-- Basic Language - JavaScript 
+- Framework - React
+- Other technologies/tools: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+``` create-react-app
+    > create-react-app
+    > webpack for bundling files
+    > Babel for code transpiling
+    > Git for version control
+    > Eslint for JavaScript linting
+    > Stylelint for style linting
+    > Jest for testing
+    > NASA media API
+    > SASS and Tailwind for styling
+ ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Demo
 
-### `npm test`
+[Live Demo Link]()
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To get a local copy up and running follow these simple example steps.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository using
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone https://github.com/KingsleyIbe/NAZA-media-library.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. cd into the cloned repository
 
-### `npm run eject`
+```
+cd NAZA-media-library
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. You now have the access to the files on your local machine!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Optional steps
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install the node_modules/ folder to be able to locally run the linter commands. Run:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm install
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To check Stylelint linter errors run:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npx stylelint "**/*.scss"
+```
 
-### Code Splitting
+To check ESLint errors run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+npx eslint .
+```
 
-### Analyzing the Bundle Size
+## 👤 **Author**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- GitHub: [@Kingsleyibe](https://github.com/kingsleyibe)
+- Twitter: [@ibekingsley2](https://twitter.com/ibekingsley2)
+- LinkedIn: [Kingsley Ibe](https://www.linkedin.com/in/kingsley-ibe-5669a5134/)
 
-### Making a Progressive Web App
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions, issues, and feature requests are welcome!
 
-### Advanced Configuration
+Feel free to check the [issues page](https://github.com/KingsleyIbe/NAZA-media-library/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Show your support
 
-### Deployment
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgement
 
-### `npm run build` fails to minify
+NASA API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
