@@ -40,9 +40,9 @@ const Search = () => {
           <label htmlFor="endDate">End Date</label>
         </div>
         <div />
-        <div>
+        <div className="search-input">
           <input
-            className="search w-[100%] border-0 rounded-[30px] py-4 px-10 bg-[#062150] text-[#fc3d21]"
+            className="w-[100%] border-0 rounded-[30px] py-4 px-10 bg-[#062150] text-[#fc3d21]"
             type="text"
             placeholder="Search Photos..."
             id="input-country"
@@ -81,7 +81,7 @@ const Search = () => {
                 <p className="opacity-[0.6]">Date: </p>
                 <p>{photo.data[0].date_created}</p>
               </div>
-              <div className=" gap-x-4 items-center mt-5 w-[500px] card">
+              <div className=" gap-x-4 items-center mt-5 lg:w-[500px] card">
                 <p className="opacity-[0.6]">Description: </p>
                 <p className="desc">{photo.data[0].description}</p>
               </div>
