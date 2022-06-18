@@ -4,7 +4,6 @@
 
 @media screen and (max-width: 1288px) {
   .search {
-    
     .photo-container {
       width: 100%;
       height: auto;
@@ -28,7 +27,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 768px) {
   header {
@@ -92,6 +90,7 @@
 
     .search-input-icon {
       gap: 10px;
+
       input {
         max-width: 100%;
         padding: 10px;
@@ -115,30 +114,29 @@
   }
 }
 
-
 @media screen and (max-width: 280px) {
   .search {
     width: 100%;
     padding: 0;
-  
+
     .search-btn {
       margin-top: 20px;
       left: 100px;
     }
-  
+
     .photo-container {
       width: 80%;
       margin-bottom: 10px;
-  
+
       img {
         width: 100%;
       }
     }
-  
+
     .flex-items {
       flex-direction: column;
     }
-  
+
     .search-input-icon {
       width: 500px;
       gap: 10px;

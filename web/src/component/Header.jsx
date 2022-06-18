@@ -14,10 +14,8 @@ const Header = () => {
   const openMenu = () => {
     if (open === false) {
       setOpen(true);
-      console.log(open);
     } else {
       setOpen(false);
-      console.log(open);
     }
   };
   return (
