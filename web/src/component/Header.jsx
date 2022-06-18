@@ -21,7 +21,7 @@ const Header = () => {
     }
   };
   return (
-    <header className="text-center p-10">
+    <header className="text-center">
       <nav className="mobile-nav relative">
         <ul className="flex gap-10 items-center ul-items p-5">
           <li>
@@ -32,17 +32,20 @@ const Header = () => {
           <li><button type="button" onClick={openMenu}><FontAwesomeIcon icon={faBars} className="menu-bar" /></button></li>
         </ul>
       </nav>
-      <nav className="desktop-nav">
-        <ul className="flex gap-x-10 items-center relative">
-          <li>
-            <img src={NASA} alt="Nasa Logo" className="w-[100px]" />
-          </li>
-          <li className="flex gap-x-10 items-center text-[#fc3d21] font-semibold text-[20px] absolute right-[150px]">
-            <div><NavLink to="/" style={handleClick} className="pb-2">Show Media</NavLink></div>
-            <div><NavLink to="/search-media" style={handleClick} className="pb-2">Search Media</NavLink></div>
-          </li>
-        </ul>
-      </nav>
+      {open ? (
+        <nav className="desktop-nav">
+          <ul className="flex gap-x-10 items-center relative">
+            <li>
+              <img src={NASA} alt="Nasa Logo" className="w-[100px] logo" />
+            </li>
+            <li className="flex gap-x-10 items-center nav-links text-[#fc3d21] font-semibold text-[20px] absolute right-[150px]">
+              <div><NavLink to="/" style={handleClick} className="pb-2">Show Media</NavLink></div>
+              <div><NavLink to="/search-media" style={handleClick} className="pb-2">Search Media</NavLink></div>
+            </li>
+          </ul>
+        </nav>
+      ) : null}
+
     </header>
   );
 };

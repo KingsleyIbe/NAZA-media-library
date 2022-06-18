@@ -16,7 +16,7 @@ const ShowMedia = () => {
 
   return (
     <section className="py-10 relative show-media  ">
-      <button type="button" className="bg-[#062150] search-btn px-5 py-2 rounded-[10px] absolute left-[40px] mt-5">
+      <button type="button" className="bg-[#062150] search-btn px-5 py-2 rounded-[10px] relative left-[100px] mt-5">
         <Link to="/search-media">Search for Photo Here</Link>
         {' '}
       </button>
