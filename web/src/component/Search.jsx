@@ -2,22 +2,23 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { fetchPhotos } from '../redux/media/media';
+import { fetchSearchPhotos } from '../redux/media/search';
 
 const Search = () => {
   const [searchText, setSearchText] = useState('');
   const dispatch = useDispatch();
-  const photos = useSelector((state) => state.photosReducer);
+  const photos = useSelector((state) => state.searchReducer);
+  // console.log(photos);
 
   useEffect(() => {
     if (!photos.length) {
-      dispatch(fetchPhotos());
+      dispatch(fetchSearchPhotos());
     }
   }, []);
-  const filteredData = photos.photos.filter((item) => Object.keys(item).some((key) => item[key]
-    .toString()
-    .toLowerCase()
-    .includes(searchText.toLocaleLowerCase())));
+  const filteredData = photos.photos.filter((photo) => Object.keys(photo)
+    .some((key) => JSON.stringify(photo[key])
+      .toLowerCase()
+      .includes(searchText.toLocaleLowerCase())));
 
   return (
     <>
@@ -62,11 +63,11 @@ const Search = () => {
               </div>
               <div className="flex gap-x-4 items-center mb-2">
                 <p className="opacity-[0.6]">Location: </p>
-                <p>{photo.data[0].center}</p>
+                <p>{photo.data[0].location}</p>
               </div>
               <div className="flex gap-x-4 items-center mb-2">
                 <p className="opacity-[0.6]">Photographer: </p>
-                <p>{photo.data[0].secondary_creator}</p>
+                <p>{photo.data[0].photographer}</p>
               </div>
               <div className="flex gap-x-4 items-center mb-2 w-[500px]">
                 <p className="opacity-[0.6]">Keywords: </p>

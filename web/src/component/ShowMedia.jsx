@@ -36,11 +36,11 @@ const ShowMedia = () => {
                 <p>{photo.data[0].title}</p>
               </div>
               <div className="flex gap-x-4 items-center mb-2">
-                <p className="opacity-[0.6]">Location: </p>
+                <p className="opacity-[0.6]">Center: </p>
                 <p>{photo.data[0].center}</p>
               </div>
               <div className="flex gap-x-4 items-center mb-2">
-                <p className="opacity-[0.6]">Photographer: </p>
+                <p className="opacity-[0.6]">Secondary Creator: </p>
                 <p>{photo.data[0].secondary_creator}</p>
               </div>
               <div className="flex gap-x-4 items-center mb-2 w-[500px]">
