@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .mobile-nav {
+    display: block;
+    width: 100%;
+    padding: 0;
+
+    .ul-items {
+      gap: 30rem;
+
+      .menu-bar {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .show-media {
+    width: 100%;
+    padding: 0;
+
+    .search-btn {
+      margin-top: 80px;
+      left: 100px;
+    }
+
+    .photo-container {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      margin-bottom: 10px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .flex-items {
+      flex-direction: column;
+    }
+  }
+}
