@@ -8,7 +8,6 @@ const Search = () => {
   const [searchText, setSearchText] = useState('');
   const dispatch = useDispatch();
   const photos = useSelector((state) => state.searchReducer);
-  // console.log(photos);
 
   useEffect(() => {
     if (!photos.length) {
@@ -24,7 +23,7 @@ const Search = () => {
     <>
       <div className="countries-con photo-name relative mb-[100px]" />
       <div className=" flex gap-x-10 items-center text-[18px]
-     search-input-icon w-[100%] left-[140px] mt-[50px]"
+     search-input-icon w-[100%] left-[140px] mt-[50px] ml-[100px]"
       >
         <h2>Filter:</h2>
         <div className="flex gap-x-5 items-center">
@@ -38,7 +37,7 @@ const Search = () => {
         <div className="country-name" />
         <div className="search-input-icon ">
           <input
-            className="search w-[60%] border-0 rounded-[30px] py-4 px-10 bg-[#062150] text-[#fc3d21]"
+            className="search w-[100%] border-0 rounded-[30px] py-4 px-10 bg-[#062150] text-[#fc3d21]"
             type="text"
             placeholder="Search Photos..."
             id="input-country"

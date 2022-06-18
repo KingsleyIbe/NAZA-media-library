@@ -11,7 +11,7 @@ const App = () => (
       <Header />
       <Routes>
         <Route path="/" element={<ShowMediaPage />} />
-        <Route path="/*" element={<SearchPage />} />
+        <Route path="/search-media" element={<SearchPage />} />
       </Routes>
     </Router>
   </>
