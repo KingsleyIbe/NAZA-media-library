@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
@@ -15,8 +15,8 @@ const ShowMedia = () => {
   }, []);
 
   return (
-    <section className="py-10 relative">
-      <button type="button" className="bg-[#062150] px-5 py-2 rounded-[10px] absolute left-[40px] mt-5">
+    <section className="py-10 relative show-media  ">
+      <button type="button" className="bg-[#062150] search-btn px-5 py-2 rounded-[10px] relative left-[100px] mt-5">
         <Link to="/search-media">Search for Photo Here</Link>
         {' '}
       </button>
@@ -27,7 +27,7 @@ const ShowMedia = () => {
             key={uuidv4()}
             className=""
           >
-            <div className="p-10 mt-10 bg-[#062150] rounded-[30px] mx-[30px] max-w-[600px] max-h-[700px]">
+            <div className="p-10 mt-10 bg-[#062150] photo-container rounded-[30px] mx-[30px] max-w-[600px] max-h-[700px]">
               <div className="">
                 <img src={photo.links[0].href} alt={photo.data[0].title} className="w-[500px] m-0 h-[300px] mb-2" />
               </div>

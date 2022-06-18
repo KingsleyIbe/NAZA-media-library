@@ -24,7 +24,7 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://kingsleyibe.github.io/NAZA-media-library/)
 
 ## Getting Started
 
@@ -63,6 +63,12 @@ To check ESLint errors run:
 
 ```
 npx eslint .
+```
+
+To check Test run:
+
+```
+npm test
 ```
 
 ## 👤 **Author**

@@ -16,7 +16,6 @@ export const photos = (payload) => ({
 export const fetchPhotos = () => async (dispatch) => {
   const res = await axios.get('https://images-api.nasa.gov/search?media_type=image');
   const newPhotos = res.data.collection.items;
-  // console.log(newPhotos);
   dispatch({
     type: FETCH_PHOTOS,
     payload: newPhotos,
