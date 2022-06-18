@@ -1,7 +1,20 @@
+import {
+  BrowserRouter as Router, Route, Routes,
+} from 'react-router-dom';
+import Header from './component/Header';
+import SearchPage from './pages/SearchPage';
+import ShowMediaPage from './pages/ShowMediaPage';
+
 const App = () => (
-  <div className="text-center">
-    <h1>Coming up</h1>
-  </div>
+  <>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<ShowMediaPage />} />
+        <Route path="/*" element={<SearchPage />} />
+      </Routes>
+    </Router>
+  </>
 );
 
 export default App;
