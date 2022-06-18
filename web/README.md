@@ -65,6 +65,12 @@ To check ESLint errors run:
 npx eslint .
 ```
 
+To check Test run:
+
+```
+npm test
+```
+
 ## 👤 **Author**
 
 - GitHub: [@Kingsleyibe](https://github.com/kingsleyibe)

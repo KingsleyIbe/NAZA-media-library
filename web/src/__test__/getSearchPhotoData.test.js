@@ -6,7 +6,7 @@ describe('test fetched data', () => {
     await fetchedData().then((data) => expect(data.data[0].title).toBe('Image 02_32_18_33'));
   });
   it('test fetched photo location', async () => {
-    await fetchedData().then((data) => expect(data.data[0].nasa_id).toBe('Stennis Space Center'));
+    await fetchedData().then((data) => expect(data.data[0].location).toBe('Stennis Space Center'));
   });
 
   it('test fetched photo description_508', async () => {
