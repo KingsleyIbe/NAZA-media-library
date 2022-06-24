@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render components render Search component 1`] = `
+Array [
+  <div
+    className="countries-con photo-name relative mb-[100px]"
+  />,
+  <div
+    className=" flex gap-x-10 items-center text-[18px] search-input-icon w-[100%] left-[140px] mt-[50px] ml-[100px]"
+  >
+    <h2>
+      Filter:
+    </h2>
+    <div
+      className="flex gap-x-5 items-center"
+    >
+      <input
+        id="startDate"
+        type="checkbox"
+      />
+      <label
+        htmlFor="startDate"
+      >
+        Start Date
+      </label>
+    </div>
+    <div
+      className="flex gap-x-5 items-center"
+    >
+      <input
+        id="endDate"
+        type="checkbox"
+      />
+      <label
+        htmlFor="endDate"
+      >
+        End Date
+      </label>
+    </div>
+    <div
+      className="country-name"
+    />
+    <div
+      className="search-input-icon "
+    >
+      <input
+        className="search w-[100%] border-0 rounded-[30px] py-4 px-10 bg-[#062150] text-[#fc3d21]"
+        id="input-country"
+        onChange={[Function]}
+        placeholder="Search Photos..."
+        type="text"
+        value=""
+      />
+    </div>
+  </div>,
+  <div
+    className="flex-items"
+  />,
+]
+`;

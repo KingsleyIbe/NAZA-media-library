@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render components render Show media component 1`] = `
+<section
+  className="py-10 relative"
+>
+  <button
+    className="bg-[#062150] px-5 py-2 rounded-[10px] absolute left-[40px] mt-5"
+    type="button"
+  >
+    <a
+      href="/search-media"
+      onClick={[Function]}
+    >
+      Search for Photo Here
+    </a>
+     
+  </button>
+  <h1
+    className="text-center font-extrabold text-[35px]"
+  >
+    Welcome to NASA Media Library
+  </h1>
+  <div
+    className="flex-items"
+  />
+</section>
+`;
