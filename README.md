@@ -24,7 +24,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://kingsleyibe.github.io/NAZA-media-library/)
+[Live Demo Link](https://nasa-media-library.herokuapp.com/)
 
 ## Getting Started
 
